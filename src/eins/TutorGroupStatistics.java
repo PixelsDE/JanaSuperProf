@@ -13,7 +13,7 @@ public class TutorGroupStatistics {
 
     public Set<Skill> repeatedSkill(Stream<TutorGroupMeeting> meetings) {
         //return the skill that appeared multiple times in the stream of meetings
-        return meetings.map(meeting -> meeting.getSkillToPractise()).collect(HashSet::new, (set, skill) -> {
+        return meetings.map(TutorGroupMeeting::getSkillToPractise).collect(HashSet::new, (set, skill) -> {
             if (set.contains(skill)) {
                 set.add(skill);
             }
