@@ -6,11 +6,11 @@ import java.util.Set;
 public class Student extends Person {
 
 
-    private String matriculationNumber;
-    private int semester;
-    private Set<String> knowledge;
-    private Set<Skill> skills;
-    private StudyLevel studyLevel;
+    private final String matriculationNumber;
+    private final int semester;
+    private final Set<String> knowledge;
+    private final Set<Skill> skills;
+    private final StudyLevel studyLevel;
 
     public Student(String name, int age, String tumID, String matriculationNumber, StudyLevel studyLevel, int semester) {
         super(name, age, tumID);

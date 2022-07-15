@@ -2,9 +2,9 @@ package eins;
 
 public class Person {
 
-    private String name;
-    private int age;
-    private String tumID;
+    private final String name;
+    private final int age;
+    private final String tumID;
 
     public Person(String name, int age, String tumID) {
         this.name = name;
@@ -12,7 +12,7 @@ public class Person {
         this.tumID = tumID;
     }
 
-    public void say(String text){
+    public void say(String text) {
         System.out.println(text);
     }
 

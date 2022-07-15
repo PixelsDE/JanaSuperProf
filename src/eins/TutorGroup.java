@@ -5,11 +5,11 @@ import java.util.Set;
 
 public class TutorGroup {
 
-    private String id;
-    private WeeklyTimeSlot timeSlot;
-    private Person tutor;
-    private Set<Student> students;
-    private Set<TutorGroupMeeting> meetings;
+    private final String id;
+    private final WeeklyTimeSlot timeSlot;
+    private final Person tutor;
+    private final Set<Student> students;
+    private final Set<TutorGroupMeeting> meetings;
 
 
     public TutorGroup(String id, WeeklyTimeSlot timeSlot, Person tutor) {

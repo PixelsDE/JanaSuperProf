@@ -1,5 +1,5 @@
 package zwei;
 
 public interface HashFunction {
-     String calculateHashCode(String document);
+    String calculateHashCode(String document);
 }

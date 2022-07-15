@@ -3,7 +3,7 @@ package eins;
 public class LocalTutorGroupMeeting extends TutorGroupMeeting {
 
 
-    private String room;
+    private final String room;
 
 
     public LocalTutorGroupMeeting(FixedDateTimeSlot timeSlot, TutorGroup tutorGroup, Skill skillToPractise, String room) {

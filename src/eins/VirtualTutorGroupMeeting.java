@@ -1,9 +1,9 @@
 package eins;
 
-public class VirtualTutorGroupMeeting extends TutorGroupMeeting{
+public class VirtualTutorGroupMeeting extends TutorGroupMeeting {
 
 
-    private String url;
+    private final String url;
 
     public VirtualTutorGroupMeeting(FixedDateTimeSlot timeSlot, TutorGroup tutorGroup, Skill skillToPractise, String url) {
         super(timeSlot, tutorGroup, skillToPractise);
@@ -12,7 +12,7 @@ public class VirtualTutorGroupMeeting extends TutorGroupMeeting{
 
     @Override
     public void practise() {
-        getTutorGroup().getTutor().say("Thank you for joining using <" +url +"> today.");
+        getTutorGroup().getTutor().say("Thank you for joining using <" + url + "> today.");
         getTutorGroup().getStudents().forEach(student -> student.learnSkill(getSkillToPractise()));
         getTutorGroup().getTutor().say("See you next time!");
 

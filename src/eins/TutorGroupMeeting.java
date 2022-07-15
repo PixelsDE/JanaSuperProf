@@ -2,9 +2,9 @@ package eins;
 
 public abstract class TutorGroupMeeting {
 
-    private FixedDateTimeSlot timeSlot;
-    private TutorGroup tutorGroup;
-    private Skill skillToPractise;
+    private final FixedDateTimeSlot timeSlot;
+    private final TutorGroup tutorGroup;
+    private final Skill skillToPractise;
 
     public TutorGroupMeeting(FixedDateTimeSlot timeSlot, TutorGroup tutorGroup, Skill skillToPractise) {
         this.timeSlot = timeSlot;

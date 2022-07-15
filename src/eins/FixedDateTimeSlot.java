@@ -3,9 +3,10 @@ package eins;
 import java.time.DayOfWeek;
 import java.time.LocalTime;
 
-public class FixedDateTimeSlot extends  TimeSlot{
+public class FixedDateTimeSlot extends TimeSlot {
 
-   private DayOfWeek dayOfWeek;
+    private final DayOfWeek dayOfWeek;
+
     public FixedDateTimeSlot(DayOfWeek day, LocalTime startTime, LocalTime endTime) {
         super(startTime, endTime);
 
