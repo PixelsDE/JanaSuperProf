@@ -12,10 +12,6 @@ public class Person {
         this.tumID = tumID;
     }
 
-    public void say(String text) {
-        System.out.println(text);
-    }
-
     public String getName() {
         return name;
     }
@@ -26,5 +22,9 @@ public class Person {
 
     public String getTumID() {
         return tumID;
+    }
+
+    public void say(String text) {
+        System.out.println(text);
     }
 }

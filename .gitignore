@@ -7,12 +7,11 @@
 
 # BlueJ files
 *.ctxt
-
+.idea
+JanaSuperProf.iml
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
-.idea
-/.idea
-JanaSuperProf.iml
+
 # Package Files #
 *.jar
 *.war
@@ -97,4 +96,21 @@ fabric.properties
 
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
+
+### Gradle template
+.gradle
+**/build/
+!src/**/build/
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Cache of project
+.gradletasknamecache
+
+# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
+# gradle/wrapper/gradle-wrapper.properties
 
